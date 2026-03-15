@@ -3,5 +3,6 @@ import tailwind from '@astrojs/tailwind';
 
 export default defineConfig({
   integrations: [tailwind()],
-  site: 'https://clawmachineuniversity.com',
+  site: 'https://crazy-jack.github.io',
+  base: '/Claw-Machine-University-Website',
 });
