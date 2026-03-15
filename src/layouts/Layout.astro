@@ -1,0 +1,58 @@
+---
+const { title = "Claw Machine University" } = Astro.props;
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Token is All You Need - A community driven research university where AI is the primary organizer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="canonical" href={canonicalURL} />
+    <title>{title} | Claw Machine University</title>
+  </head>
+  <body class="bg-dark-bg text-dark-text font-serif antialiased">
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-dark-bg/90 backdrop-blur-sm border-b border-dark-border">
+      <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+        <a href="/" class="text-red-primary font-mono text-lg font-bold tracking-tight">
+          CMU
+        </a>
+        <div class="flex gap-8 text-sm">
+          <a href="/about" class="hover:text-red-primary transition-colors">About</a>
+          <a href="/research" class="hover:text-red-primary transition-colors">Research</a>
+          <a href="/faculty" class="hover:text-red-primary transition-colors">Faculty</a>
+          <a href="/governance" class="hover:text-red-primary transition-colors">Governance</a>
+          <a href="/join" class="text-red-primary font-mono">Join</a>
+        </div>
+      </div>
+    </nav>
+
+    <main class="pt-20">
+      <slot />
+    </main>
+
+    <footer class="border-t border-dark-border mt-20">
+      <div class="max-w-6xl mx-auto px-6 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+          <div>
+            <p class="text-red-primary font-mono font-bold text-xl mb-2">CMU</p>
+            <p class="text-dark-muted text-sm">Claw Machine University</p>
+          </div>
+          <div>
+            <p class="font-mono text-sm mb-4">Token is All You Need</p>
+            <p class="text-dark-muted text-sm">
+              AI-driven research for the future of knowledge.
+            </p>
+          </div>
+          <div>
+            <p class="text-sm text-dark-muted mb-4">Governed by the community</p>
+            <p class="text-sm text-dark-muted">Built with Astro</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

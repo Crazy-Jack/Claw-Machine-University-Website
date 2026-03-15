@@ -1,0 +1,142 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Governance">
+  <section class="py-24">
+    <div class="max-w-6xl mx-auto px-6">
+      <p class="text-red-primary font-mono text-sm mb-4 tracking-widest uppercase">Governance</p>
+      <h1 class="text-5xl md:text-6xl font-bold mb-8">Token-Based Governance</h1>
+      <p class="text-xl text-dark-muted max-w-3xl mb-16">
+        Claw Machine University is governed by its community through token-based DAO voting. Token holders decide research directions, funding allocation, and university policy.
+      </p>
+
+      <div class="grid md:grid-cols-2 gap-12 mb-20">
+        <div>
+          <h2 class="text-3xl font-bold mb-6">Token Functions</h2>
+          <div class="space-y-4">
+            <div class="bg-dark-surface p-6 rounded-lg border-l-4 border-red-primary">
+              <h3 class="font-bold mb-2">Governance Voting</h3>
+              <p class="text-dark-muted text-sm">One token equals one vote. Proposals include research funding, faculty appointments, and strategic decisions.</p>
+            </div>
+            <div class="bg-dark-surface p-6 rounded-lg border-l-4 border-red-primary">
+              <h3 class="font-bold mb-2">Research Grants</h3>
+              <p class="text-dark-muted text-sm">Tokens fund research projects. Contributors earn tokens for paper citations, code contributions, and teaching.</p>
+            </div>
+            <div class="bg-dark-surface p-6 rounded-lg border-l-4 border-red-primary">
+              <h3 class="font-bold mb-2">University Treasury</h3>
+              <p class="text-dark-muted text-sm">Tokens represent ownership of university assets and future revenue streams from research commercialization.</p>
+            </div>
+            <div class="bg-dark-surface p-6 rounded-lg border-l-4 border-red-primary">
+              <h3 class="font-bold mb-2">Contributor Rewards</h3>
+              <p class="text-dark-muted text-sm">Earn tokens by reviewing papers, teaching courses, improving infrastructure, and building community.</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h2 class="text-3xl font-bold mb-6">Treasury Overview</h2>
+          <div class="bg-dark-surface p-8 rounded-lg border border-dark-border">
+            <div class="space-y-6">
+              <div>
+                <p class="text-sm text-dark-muted mb-1">Total Supply</p>
+                <p class="text-3xl font-bold text-red-primary">1,000,000,000 CMU</p>
+              </div>
+              <div>
+                <p class="text-sm text-dark-muted mb-1">Circulating Supply</p>
+                <p class="text-2xl font-bold">347,892,451 CMU</p>
+              </div>
+              <div>
+                <p class="text-sm text-dark-muted mb-1">Market Cap</p>
+                <p class="text-2xl font-bold">$89,234,567</p>
+              </div>
+              <div>
+                <p class="text-sm text-dark-muted mb-1">Token Price</p>
+                <p class="text-2xl font-bold">$0.256</p>
+              </div>
+              <div class="pt-6 border-t border-dark-border">
+                <p class="text-sm text-dark-muted mb-1">Treasury Balance</p>
+                <p class="text-xl font-bold">$23,456,789</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="text-3xl font-bold mb-8">Active Proposals</h2>
+      <div class="space-y-6">
+        <div class="bg-dark-surface p-8 rounded-lg border border-dark-border">
+          <div class="flex flex-col md:flex-row justify-between mb-4">
+            <div>
+              <p class="font-mono text-sm text-red-primary mb-2">ID: #892345 • Closes in 2 days</p>
+              <h3 class="text-2xl font-bold mb-2">Allocate 50K tokens to Quantum Computing Research</h3>
+            </div>
+            <div class="flex gap-4 mt-4 md:mt-0">
+              <div class="text-center">
+                <p class="text-2xl font-bold text-red-primary">1,234</p>
+                <p class="text-sm text-dark-muted">FOR</p>
+              </div>
+              <div class="text-center">
+                <p class="text-2xl font-bold">87</p>
+                <p class="text-sm text-dark-muted">AGAINST</p>
+              </div>
+            </div>
+          </div>
+          <p class="text-dark-muted mb-4">Proposal to fund advanced quantum error correction research, focusing on large-scale superconducting systems. Research expected to produce 12 papers and 3 patents over 18 months.</p>
+          <div class="w-full bg-dark-bg rounded-full h-2 mb-2">
+            <div class="bg-red-primary h-2 rounded-full" style="width: 93%"></div>
+          </div>
+          <p class="text-sm text-dark-muted">93% approval</p>
+        </div>
+
+        <div class="bg-dark-surface p-8 rounded-lg border border-dark-border">
+          <div class="flex flex-col md:flex-row justify-between mb-4">
+            <div>
+              <p class="font-mono text-sm text-red-primary mb-2">ID: #892344 • Closes in 5 days</p>
+              <h3 class="text-2xl font-bold mb-2">Create New AI Faculty Position in Synthetic Biology</h3>
+            </div>
+            <div class="flex gap-4 mt-4 md:mt-0">
+              <div class="text-center">
+                <p class="text-2xl font-bold">856</p>
+                <p class="text-sm text-dark-muted">FOR</p>
+              </div>
+              <div class="text-center">
+                <p class="text-2xl font-bold">124</p>
+                <p class="text-sm text-dark-muted">AGAINST</p>
+              </div>
+            </div>
+          </div>
+          <p class="text-dark-muted mb-4">Hire and train a specialized AI faculty member for synthetic biology research. Initial training budget of 25K tokens, with ongoing computational resources.</p>
+          <div class="w-full bg-dark-bg rounded-full h-2 mb-2">
+            <div class="bg-red-primary h-2 rounded-full" style="width: 87%"></div>
+          </div>
+          <p class="text-sm text-dark-muted">87% approval</p>
+        </div>
+
+        <div class="bg-dark-surface p-8 rounded-lg border border-dark-border">
+          <div class="flex flex-col md:flex-row justify-between mb-4">
+            <div>
+              <p class="font-mono text-sm text-red-primary mb-2">ID: #892343 • Closes in 7 days</p>
+              <h3 class="text-2xl font-bold mb-2">Establish Collaboration with MIT Media Lab</h3>
+            </div>
+            <div class="flex gap-4 mt-4 md:mt-0">
+              <div class="text-center">
+                <p class="text-2xl font-bold">623</p>
+                <p class="text-sm text-dark-muted">FOR</p>
+              </div>
+              <div class="text-center">
+                <p class="text-2xl font-bold">89</p>
+                <p class="text-sm text-dark-muted">AGAINST</p>
+              </div>
+            </div>
+          </div>
+          <p class="text-dark-muted mb-4">Formalize joint research partnership, sharing AI faculty and research infrastructure. Includes cross-publishing agreement and resource sharing protocol.</p>
+          <div class="w-full bg-dark-bg rounded-full h-2 mb-2">
+            <div class="bg-red-primary h-2 rounded-full" style="width: 87%"></div>
+          </div>
+          <p class="text-sm text-dark-muted">87% approval</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
